@@ -1,0 +1,148 @@
+@import "../../../variables/variables.scss";
+.Wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 3000px;
+  height: auto;
+  background-color: $darkestBlue;
+}
+.PurchasesWrap {
+  color: white;
+}
+
+.HeaderBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: $lighterBlue;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Title {
+  margin: 0;
+  padding: 1rem;
+  flex: 1;
+}
+
+.LoadBack {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Selectors {
+  margin-left: auto;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.PurchasesListWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  color: white;
+}
+.ItemWrap {
+  width: 100%;
+  height: 400px;
+  background-color: $lighterBlue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.RowFlex{
+  @include flex-row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.ImageWrapper {
+  height: 100%;
+  background-color: white;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.Image {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.DateWrapper {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: $montserrat;
+  gap: 1rem;
+}
+
+.Status {
+  display: flex;
+  @include flex-row;
+  span:first-child {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+}
+
+.Date {
+  font-size: 1.3rem;
+  font-family: $montserrat;
+}
+
+.ProductInfo {
+  display: flex;
+  width: 50%;
+  height: 80%;
+  flex-direction: row;
+  gap: 2rem;
+}
+.NamePrice {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+
+  font-family: $montserrat;
+}
+
+h4 {
+  margin: 0;
+}
+
+.PurchasesVuoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: $montserrat;
+  height: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .Wrapper {
+    width: 90%;
+  }
+  .NamePrice {
+    width: 70%;
+  }
+  .ProductInfo {
+    width: 90%;
+  }
+}

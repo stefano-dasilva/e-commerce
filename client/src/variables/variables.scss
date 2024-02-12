@@ -1,0 +1,55 @@
+$darkestBlue: #001220;
+$lighterBlue: #082335;
+$lightBlue: #55b3ee;
+$lato: "Lato", sans-serif;
+$montserrat: "Montserrat", sans-serif;
+$font-path: "../fonts/";
+$error : #7C8A94;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin border {
+  border: 1px solid white;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin border-lg {
+  border-radius: 0.5rem;
+}
+
+
+@font-face {
+  font-family: "richard";
+  src: url("#{$font-path}Richard.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "chailce";
+  src: url("#{$font-path}Chailce.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "rosmatika";
+  src: url("#{$font-path}Rosmatika.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "aquire";
+  src: url("#{$font-path}Aquire.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,46 @@
+@import "../../../src/variables/variables.scss";
+
+.Wrapper {
+  color: white;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: inherit;
+  gap: 1rem;
+  font-family: $montserrat;
+}
+
+.Category {
+  background-color: #082335;
+  padding: 1rem;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+    font-family: "aquire", sans-serif;
+  letter-spacing: 0.1rem;
+  gap: 2rem;
+  cursor: pointer;
+}
+.CategoryName {
+  font-weight: bold;
+}
+
+.CategoryName::first-letter{
+  color: $lightBlue;
+}
+
+@media (max-width: 767px) {
+  .CategoryName {
+    display: none;
+  }
+
+  .Category {
+    width: 40%;
+    justify-content: center;
+    border-radius: 80%;
+  }
+}

@@ -1,0 +1,112 @@
+@import "../../../variables/variables.scss";
+
+.mainWrapper {
+  @include flex-center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #001220;
+}
+.formPosition {
+  width: 25%;
+  height: 70%;
+  background-color: #022642;
+  @include flex-column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0.9rem;
+}
+
+.title {
+  color: white;
+  width: 80%;
+  font-family: "aquire", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+}
+
+.usernameWrapper {
+  @include flex-row;
+  align-items: center;
+  background-color: #082335;
+  border: 2px solid #55b3ee;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  gap: 1rem;
+}
+.passwordWrapper {
+  @include flex-row;
+  align-items: center;
+  background-color: #082335;
+  border: 2px solid #55b3ee;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  gap: 1rem;
+}
+.inputsWrapper {
+  @include flex-column;
+  width: 80%;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.submitButton {
+  width: 100%;
+  outline: none;
+  background-color: #3ee6b0;
+  border-radius: 0.6rem;
+  padding: 0.7rem;
+  color: #001220;
+  font-weight: bold;
+  margin: auto;
+  box-shadow: none;
+  border-style: none;
+  font-family: $montserrat;
+  cursor: pointer;
+}
+.redirectionWrapper {
+  @include flex-column;
+  width: 80%;
+  height: 20%;
+  gap: 0.1rem;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  color: #55b3ee;
+  border: none;
+  font-family: $montserrat;
+  background-color: inherit;
+  width: 100%;
+}
+
+.ErrorMessage{
+  font-family: $montserrat;
+  margin: 0;
+  color: $error;
+}
+
+h5 {
+  font-family: $montserrat;
+}
+
+input[type="text"]::placeholder {
+  color: $lightBlue;
+  font-family: $montserrat;
+}
+input[type="password"]::placeholder {
+  color: $lightBlue;
+  font-family: $montserrat;
+}
+@media (max-width: 767px) {
+  .formPosition {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .formPosition {
+    width: 90%;
+  }
+}

@@ -1,0 +1,131 @@
+@import "../../../variables/variables.scss";
+
+.Wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 3000px;
+  height: auto;
+  background-color: $darkestBlue;
+}
+
+.LoadBack {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.CartListWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  color: white;
+}
+h1{
+  font-family: $montserrat;
+}
+.ItemWrap {
+  width: 100%;
+  height: 400px;
+  background-color: $lighterBlue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.ImageWrapper {
+  height: 100%;
+  background-color: white;
+  width: 50%;
+  box-sizing: border-box; // Aggiungi questa linea
+}
+
+.Image {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.PriceWrapper {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.ProductInfo {
+  display: flex;
+  width: 50%;
+  height: 80%;
+  flex-direction: row;
+  gap: 2rem;
+}
+.NamePrice {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: $montserrat;
+}
+
+h4 {
+  margin: 0;
+}
+
+.Buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  gap: 2rem;
+}
+
+.CarrelloVuoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: $montserrat;
+  height: 100%;
+}
+
+.ButtonWrap {
+  width: 25%;
+  padding: 0.7rem;
+  background-color: #3ee6b0;
+  border-radius: 0.6rem;
+  font-family: $lato;
+  display: flex;
+  justify-content: center;
+  border-style: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .Wrapper {
+    width: 90%;
+  }
+  .NamePrice {
+    width: 70%;
+  }
+  .ProductInfo {
+    width: 90%;
+  }
+
+  .ButtonWrap {
+    width: 30%;
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../../src/variables/variables.scss";
+
+.Wrapper {
+  width: 0;
+  position: absolute;
+  background-color: #001220;
+  flex-direction: column;
+  font-family: $lato;
+  margin-top: 5rem;
+  height: max-content;
+  border-right: 1px solid $lighterBlue;
+  overflow-x: hidden;
+  transition: width 0.3s ease-in-out;
+
+  &.open {
+    width: 20vw;
+  }
+}
+
+.ContentContainer {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .Wrapper {
+    &.open {
+      width: 15vw;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .Wrapper {
+    &.open {
+      width: 25vw;
+    }
+  }
+  .ContentContainer {
+    width: 90%;
+  }
+}
