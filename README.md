@@ -47,6 +47,13 @@ Interagendo con l'icona del carrello si apre la pagina in cui è possibile visua
 ## Logout
 L'applicazione consente il logout dell'utente.<br>
 
+
+  ## UML
+Vista ad alto livello del model 
+
+
+ ![uml](/client/src/assets/umlblank.jpeg)
+
 ### Strumenti e linguaggi utilizzati 
 
 - `Client` : React, Javascript, Html , SASS, CSS, Typescript
